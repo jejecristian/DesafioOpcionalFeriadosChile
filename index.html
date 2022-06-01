@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristian Torres">
+    <meta name="keywords"
+        content="desafioLatam, html, css, bootstrap, javascript, funciones, condicionales, ciclos, arreglos, objetos, jquery, apis">
+
+    <!-- Bootstrap CSS v5.1.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery v3.6.0-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Plugin jQuery-->
+    <script src="assets/js/jQuery.feriadosChile.js" charset="utf-8"></script>
+
+    <title>Desafio Javascript</title>
+</head>
+
+
+<body>
+
+    <!-- Titulo principal-->
+    <header class="bg-dark text-white py-3">
+        <div>
+            <h1 class="text-center">Desafio Javascript</h1>
+            <h6 class="px-1 px-lg-5">APIs Dia 3 - Feriados Chile.</h6>
+            <h6 class="px-1 px-lg-5">Alumno: Cristian Torres</h6>
+        </div>
+    </header>
+
+    <!-- Muestra historial Centro Médico -->
+    <section class="container mt-5">
+        <h6>Descripción:</h6>
+        <p>Se requiere desarrollar un sitio web que permita conocer los feriados de Chile para el año
+            actual, para esto, se debe consumir la siguiente API. Puedes revisar la estructura con
+            Postman y mostrar el resultado en una tabla HTML, utiliza jQuery para manipular el DOM.
+            - Puedes usar alguna librería de CSS a tu elección si lo deseas (bootstrap, foundation,
+            etc).</p>
+        <h6>Requerimientos:</h6>
+        <p>1. Cargar jQuery en el proyecto y armar una estructura básica
+            y simple en html para el problema.</p>
+        <p>2. Crear un código para consumir la API con jQuery.</p>
+        <p>3. Utilizar JSON de respuesta y mostrar los datos en una tabla de HTML.</p>
+
+        <h4>Resultados obtenidos desde la API:</h4>
+        <div>
+            <p></p>
+            <div class="resultado">
+                <table id="tabla" class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Nombre</th>
+                            <th>Extra</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo">
+                        <!-- En el cuerpo de esta tabla se imprimen todos los registros mediante jQuery -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página-->
+    <footer class="bg-dark text-white text-center py-5 ">
+        <h4>DESAFIO JAVASCRIPT</h4>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper v5.1.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Javascript-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
